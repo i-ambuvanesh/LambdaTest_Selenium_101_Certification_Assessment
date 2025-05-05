@@ -2,16 +2,6 @@ image:
   file: .gitpod.Dockerfile
 
 tasks:
-  - name: Build and Test
+  - name: Run TestNG tests on LambdaTest
     init: mvn clean install
-    command: mvn test
-
-ports:
-  - port: 7900
-    onOpen: ignore
-
-vscode:
-  extensions:
-    - vscjava.vscode-java-pack
-    - formulahendry.code-runner
-    - ritwickdey.liveserver
+    command: mvn test -DsuiteXmlFile=testng.xml

@@ -37,7 +37,7 @@ public class LambdaTestManager {
         ltOptions.put("w3c", true);
         ltOptions.put("resolution", "1920x1080");
 
-        ltOptions.put("build", "Selenium_101_Certification");
+        ltOptions.put("build", "Selenium_101_Certification_Test");
         ltOptions.put("project", "LambdaTest_Selenium_101_Certification_Assessment");
         ltOptions.put("smartUI.project", "LambdaTest_Selenium_101_Certification_Assessment");
 
