@@ -15,7 +15,7 @@ public class InputFormPage {
     }
 
     public static By submitBtn(){
-        return By.xpath("//button[@type = 'submit'][text() = 'Submit']");
+        return By.cssSelector("#seleniumform > div.text-right > button");
     }
 
     public static By successMsg(String text){
