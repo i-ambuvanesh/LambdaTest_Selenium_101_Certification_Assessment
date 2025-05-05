@@ -1,9 +1,17 @@
-image: maven:3.9.4-eclipse-temurin-17
+image:
+  file: .gitpod.Dockerfile
 
 tasks:
-  - name: Build with Maven
+  - name: Build and Test
     init: mvn clean install
+    command: mvn test
 
 ports:
-  - port: 9222
+  - port: 7900
     onOpen: ignore
+
+vscode:
+  extensions:
+    - vscjava.vscode-java-pack
+    - formulahendry.code-runner
+    - ritwickdey.liveserver
