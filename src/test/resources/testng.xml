@@ -1,0 +1,35 @@
+<suite name="LambdaTestSuite" parallel="tests" thread-count="2">
+
+    <test name="Windows_Chrome">
+
+        <parameter name="browser" value="chrome"/>
+        <parameter name="platform" value="Windows 10"/>
+        <parameter name="version" value="latest"/>
+
+        <classes>
+            <class name="tests.SimpleFormDemoTests"/>
+            <class name="tests.DragAndDropTests"/>
+            <class name="tests.InputFormTests"/>
+        </classes>
+    </test>
+
+    <test name="Mac_Firefox">
+
+        <parameter name="browser" value="Firefox"/>
+        <parameter name="platform" value="macOS Big sur"/>
+        <parameter name="version" value="137.0"/>
+
+        <classes>
+            <class name="tests.SimpleFormDemoTests"/>
+            <class name="tests.DragAndDropTests"/>
+            <class name="tests.InputFormTests"/>
+        </classes>
+    </test>
+
+    <listeners>
+        <listener class-name="Listeners.RetryListener" />
+        <listener class-name="Listeners.SuiteListener" />
+        <listener class-name="Listeners.TestListener" />
+    </listeners>
+
+</suite>

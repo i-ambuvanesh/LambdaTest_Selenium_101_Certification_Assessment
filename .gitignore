@@ -29,8 +29,6 @@ test-output/
 allure-results/
 allure-report/
 extent-report/
-*.html
-*.xml
 *.json
 *.csv
 

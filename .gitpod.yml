@@ -1,0 +1,9 @@
+image: maven:3.9.4-eclipse-temurin-17
+
+tasks:
+  - name: Build with Maven
+    init: mvn clean install
+
+ports:
+  - port: 9222
+    onOpen: ignore
